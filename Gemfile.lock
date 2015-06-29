@@ -32,18 +32,41 @@ GEM
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
     coderay (1.1.0)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
     daemons (1.1.9)
     database_cleaner (1.4.0)
     diff-lcs (1.2.5)
     eventmachine (1.0.7)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    git (1.2.9.1)
     i18n (0.7.0)
+    jasmine (2.3.0)
+      jasmine-core (~> 2.3)
+      phantomjs
+      rack (>= 1.2.1)
+      rake
+    jasmine-core (2.3.4)
     json (1.8.2)
+    learn-co (1.0.4)
+      crack
+      faraday (~> 0.9)
+      git (~> 1.2)
+      jasmine
+      netrc
+      oj (~> 2.9)
+      rspec (~> 3.0)
     method_source (0.8.2)
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.5.1)
+    multipart-post (2.0.0)
+    netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    oj (2.12.9)
+    phantomjs (1.9.8.0)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -68,6 +91,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
+    safe_yaml (1.0.4)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra-activerecord (2.0.5)
@@ -93,6 +117,7 @@ DEPENDENCIES
   activerecord
   capybara
   database_cleaner
+  learn-co
   pry
   rake
   require_all
@@ -102,3 +127,6 @@ DEPENDENCIES
   sinatra-activerecord
   sqlite3
   thin
+
+BUNDLED WITH
+   1.10.4
